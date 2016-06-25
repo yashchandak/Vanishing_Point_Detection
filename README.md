@@ -1,6 +1,6 @@
 # Vanishing-Point-Detector
 
-![](https://cloud.githubusercontent.com/assets/8938083/9835917/7c594192-5a1f-11e5-986f-5877b56e1fe6.png)
+[](https://cloud.githubusercontent.com/assets/8938083/9835917/7c594192-5a1f-11e5-986f-5877b56e1fe6.png)
 Detector on sample footage. Red colored lines were considered for estimating the vanishing point. The black circle marks the region of interest, where the center of the circle is the approximate vanishing point.
 
 
