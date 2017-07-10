@@ -74,7 +74,8 @@ class vanishingPt
 		//read from video file on disk
 		//to read from webcam initialize as: cap = VideoCapture(int device_id);
 		//cap = VideoCapture(1);
-		cap = VideoCapture("road.m4v");
+        // cap = VideoCapture("road.m4v");
+		cap = VideoCapture("../TrafficSpeed/data/2014-BVMC-v5.m4a");
 
 		if( cap.isOpened() )//check if camera/ video stream is available
 		{
@@ -217,7 +218,7 @@ class vanishingPt
 				btemp = b.rows(indices);
 
 				//if lines are parallel then skip
-				if(rank(Atemp) != 2)
+				if(arma::rank(Atemp) != 2)
 					continue;
 
 				//solves for 'x' in A*x = b
