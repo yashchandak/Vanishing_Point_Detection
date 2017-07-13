@@ -1,0 +1,5 @@
+#/bin/bash
+
+# brew install opencv3
+# brew install armadillo
+g++ -v `pkg-config --cflags  --libs armadillo` -L/usr/local/opt/opencv3/lib -I/usr/local/opt/opencv3/include -lopencv_calib3d -lopencv_core -lopencv_features2d -lopencv_flann  -lopencv_highgui -lopencv_imgcodecs -lopencv_imgproc -lopencv_ml -lopencv_objdetect -lopencv_photo -lopencv_shape -lopencv_stitching -lopencv_superres -lopencv_video -lopencv_videoio -lopencv_videostab  main.cpp -o vanishing_point_detection
